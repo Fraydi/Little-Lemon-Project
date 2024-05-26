@@ -1,0 +1,44 @@
+.hero-section-background {
+    background-color: #495E57; /* Dark gray background */
+    width: 100%;
+    padding: 20px;
+    height: auto;
+    max-height: 60vh;
+}
+
+.hero-section {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.hero-text {
+    color: #fff; /* Default text color white */
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    color: #F4CE14; /* Yellow color for Little Lemon */
+}
+
+.hero-text h2 {
+    color: #fff; /* White color for Chicago */
+    margin-top: -35px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #fff; /* White color for the description */
+    margin-bottom: 40px;
+}
+
+.hero-image {
+    width: 30%;
+    height: 350px; /* Fixed height for the image */
+    border-radius: 16px; /* Rounded corners for the image */
+    object-fit: cover; /* Ensure the image covers the area, cropping if necessary */
+    object-position: center; /* Center the image */
+    margin-top: 20px;
+}

@@ -1,0 +1,30 @@
+.highlights-container {
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto; /* Center the container */
+    margin-top: 40px;
+}
+
+.highlights-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.highlights-header h1 {
+    margin: 0;
+    /* font-size: 36px; */
+}
+
+.highlights-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    flex: 1;
+    max-width: 30%;
+}

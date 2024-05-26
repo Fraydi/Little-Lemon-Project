@@ -1,0 +1,48 @@
+.reservation-container {
+    background-image: url('../assets/restaurant.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    width: 100%;
+    padding: 20px;
+}
+
+.description-section,
+.booking-form {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border-radius: 16px;
+    padding: 20px;
+    margin: 40px;
+}
+
+.description-section h1,
+.description-section p,
+.description-section h3 {
+    color: #000; /* Black text color */
+}
+
+.description-section h3 {
+    margin-top: 20px; /* Increased margin above the h3 */
+    font-weight: 500;
+}
+
+.description-section p {
+    margin-top: 60px; /* Increased margin above the p */
+    margin-bottom: 60px; /* Increased margin below the p */
+}
+
+.reservation-container > .description-section,
+.reservation-container > .booking-form {
+    max-width: 50%;
+    width: 50%;
+}
+
+.reservation-container > .booking-form {
+    width: 35%; /* Adjust the width */
+}
+
+#reserve-title {
+    font-size: 40pt;
+}

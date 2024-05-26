@@ -1,0 +1,17 @@
+.button {
+    background-color: #F4CE14; /* Background color */
+    color: #000; /* Black text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 16px; /* Rounded corners */
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.button:hover {
+    background-color: #495E57; /* Background color on hover */
+    color: #fff; /* White text color on hover */
+}

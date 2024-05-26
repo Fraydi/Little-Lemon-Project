@@ -1,0 +1,17 @@
+.nav-list {
+    display: flex;
+}
+
+.nav-item a {
+    padding: 0 15px;
+    font-size: smaller;
+    font-weight: 500;
+}
+
+.nav-item a:hover {
+    color: #495E57; /* Change color when hovered */
+}
+
+.nav-item a.active {
+    color: gray; /* Color when active */
+}

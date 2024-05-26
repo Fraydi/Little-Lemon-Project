@@ -1,0 +1,62 @@
+.booking-form {
+    background-color: #fff; /* White background */
+    border-radius: 16px; /* Rounded corners */
+    display: grid;
+    max-width: 500px;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto; /* Center the form */
+}
+
+.booking-form h3,
+.booking-form p {
+    text-align: left; /* Left align text */
+}
+
+.booking-form label {
+    text-align: left; /* Left align labels */
+    color: #495E57; /* Label color */
+}
+
+.booking-form input,
+.booking-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #495E57; /* Border color */
+    border-radius: 8px; /* Slightly rounded corners for inputs */
+}
+
+.booking-form input[type="date"] {
+    font-family: 'Karla', sans-serif; /* Optional: to ensure consistent date picker appearance */
+}
+
+.booking-form select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'Karla', sans-serif;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+    outline: none;
+    border-color: #F4CE14; /* Highlight border on focus */
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #F4CE14;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #495E57;
+    color: #fff;
+}
