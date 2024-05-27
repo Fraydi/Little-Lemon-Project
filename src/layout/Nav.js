@@ -4,14 +4,23 @@ import './Nav.css';
 
 function Nav() {
   const [activeLink, setActiveLink] = useState('/');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleClick = (path) => {
     setActiveLink(path);
+    setMenuOpen(false); // Close the menu after clicking a link
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <nav aria-label="Main Navigation">
-      <ul className="nav-list">
+      <button className="menu-toggle" onClick={toggleMenu}>
+        ☰
+      </button>
+      <ul className={`nav-list ${menuOpen ? 'open' : ''}`}>
         <li className="nav-item">
           <NavLink
             to="/"

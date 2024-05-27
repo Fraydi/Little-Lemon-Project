@@ -60,3 +60,12 @@
     background-color: #495E57;
     color: #fff;
 }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .booking-form {
+        max-width: 100%; /* Increase max-width for better readability */
+        padding: 15px;
+        gap: 15px;
+    }
+}

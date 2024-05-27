@@ -14,7 +14,7 @@
 
 .highlights-header h1 {
     margin: 0;
-    /* font-size: 36px; */
+    font-size: 36px;
 }
 
 .highlights-cards {
@@ -27,4 +27,29 @@
 .card {
     flex: 1;
     max-width: 30%;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .highlights-header {
+        flex-direction: column;
+        align-items: center; /* Center the heading and button horizontally */
+    }
+
+    .highlights-header h1 {
+        font-size: 40px; /* Adjust the font size to be larger than before but still smaller than desktop */
+        margin-bottom: 10px;
+        text-align: center; /* Center the heading text */
+    }
+
+    .highlights-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
 }

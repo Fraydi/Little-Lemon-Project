@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
 }
 
 .footer-logo {
@@ -23,7 +24,7 @@
     margin-right: 20px;
 }
 
-.footer-contact, .social-media-links, .footer-hours {
+.footer-contact, .footer-hours {
     margin: 10px 0;
 }
 
@@ -53,4 +54,21 @@
 .footer p {
     margin: 0;
     line-height: 1.5;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .footer-logo-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-contact, .footer-hours {
+        text-align: center;
+    }
 }
