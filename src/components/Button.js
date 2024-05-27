@@ -10,7 +10,7 @@ function Button({ title, navigateTo }) {
   }
 
   return (
-    <button className="button" onClick={handleClick}>
+    <button className="button" onClick={handleClick} aria-label="On Click">
       {title}
     </button>
   );

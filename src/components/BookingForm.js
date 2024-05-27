@@ -1,16 +1,16 @@
 import React from 'react';
 import Button from './Button';
-import './BookingForm.css'; // Import the unique CSS file
+import './BookingForm.css';
 
-function BookingForm({ state, dispatch }) {
+function BookingForm({ state, dispatch, onDateChange }) {
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(state);  // Log the current state to the console or process the reservation
+        console.log(state);
     };
 
     const handleChange = (field, value) => {
         if (field === 'date') {
-            dispatch({ type: 'updateTimesBasedOnDate', date: value });
+            onDateChange(value); // Call the function passed from App
         } else {
             dispatch({ type: 'updateField', field, value });
         }
@@ -56,7 +56,7 @@ function BookingForm({ state, dispatch }) {
                 value={state.date}
                 onChange={(e) => handleChange('date', e.target.value)}
                 required
-                min={new Date().toISOString().split('T')[0]} // Sets the minimum date to today
+                min={new Date().toISOString().split('T')[0]}
             />
 
             <label htmlFor="res-time">Choose time</label>
@@ -75,10 +75,10 @@ function BookingForm({ state, dispatch }) {
             <input
                 type="number"
                 id="res-guests"
-                value={state.guests || 2} // Defaults to 2 guests
+                value={state.guests || 2}
                 onChange={(e) => handleChange('guests', e.target.value)}
                 required
-                min={1}  // Assuming the least number of guests is 1
+                min={1}
             />
 
             <label htmlFor="res-occasion">Occasion (Optional)</label>

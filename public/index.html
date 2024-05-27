@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
@@ -8,7 +8,7 @@
     <meta name="description" content="Enjoy a fresh dining experience at Little Lemon, where flavor meets freshness."/>
     <meta name="language" content="English">
     <meta name="title" content="Little Lemon">
-    <meta name="author" content="Feizl A. Marani">
+    <meta name="author" content="Frydie Goldstein">
     <meta name="format-detection" content="telephone=yes">
     <meta name="HandheldFriendly" content="true">
 
@@ -28,15 +28,10 @@
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-
-    <!-- Additional comments and notes -->
-    <!--
-      The manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. Learn more at https://developers.google.com/web/fundamentals/web-app-manifest/
-      Use %PUBLIC_URL% in the tags above to ensure that paths work correctly in different deployment environments.
-    -->
-  </head>
-  <body>
+    <!-- Load the API script synchronously -->
+    <script src="https://raw.githubusercontent.com/Meta-Front-End-Developer-PC/capstone/master/api.js"></script>
+</head>
+<body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -49,5 +44,5 @@
       To begin development, run `npm start`.
       To create a production bundle, use `npm run build`.
     -->
-  </body>
+</body>
 </html>

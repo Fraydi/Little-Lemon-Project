@@ -10,13 +10,14 @@ function Nav() {
   };
 
   return (
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul className="nav-list">
         <li className="nav-item">
           <NavLink
             to="/"
             className={activeLink === '/' ? 'active' : ''}
             onClick={() => handleClick('/')}
+            aria-current={activeLink === '/' ? 'page' : undefined}
           >
             Home
           </NavLink>
@@ -26,6 +27,7 @@ function Nav() {
             to="/about"
             className={activeLink === '/about' ? 'active' : ''}
             onClick={() => handleClick('/about')}
+            aria-current={activeLink === '/about' ? 'page' : undefined}
           >
             About
           </NavLink>
@@ -35,6 +37,7 @@ function Nav() {
             to="/menu"
             className={activeLink === '/menu' ? 'active' : ''}
             onClick={() => handleClick('/menu')}
+            aria-current={activeLink === '/menu' ? 'page' : undefined}
           >
             Menu
           </NavLink>
@@ -44,6 +47,7 @@ function Nav() {
             to="/reservations"
             className={activeLink === '/reservations' ? 'active' : ''}
             onClick={() => handleClick('/reservations')}
+            aria-current={activeLink === '/reservations' ? 'page' : undefined}
           >
             Reservations
           </NavLink>
@@ -53,6 +57,7 @@ function Nav() {
             to="/order"
             className={activeLink === '/order' ? 'active' : ''}
             onClick={() => handleClick('/order')}
+            aria-current={activeLink === '/order' ? 'page' : undefined}
           >
             Order Online
           </NavLink>
@@ -62,6 +67,7 @@ function Nav() {
             to="/login"
             className={activeLink === '/login' ? 'active' : ''}
             onClick={() => handleClick('/login')}
+            aria-current={activeLink === '/login' ? 'page' : undefined}
           >
             Login
           </NavLink>
